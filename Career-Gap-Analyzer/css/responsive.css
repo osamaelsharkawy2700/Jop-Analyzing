@@ -1,0 +1,115 @@
+@media (max-width: 1000px) {
+  :root { --space-24: 5rem; }
+  .hero-grid { gap: 38px; grid-template-columns: 0.9fr 1.1fr; }
+  .hero h1 { font-size: clamp(40px, 5.5vw, 54px); }
+  .floating-note { right: -10px; }
+  .feature-layout { gap: 45px; grid-template-columns: 0.75fr 1.25fr; }
+  .benefits-layout { gap: 55px; }
+  .faq-layout { gap: 60px; }
+  .footer-links { gap: 45px; }
+}
+
+@media (max-width: 760px) {
+  :root { --space-24: 4rem; }
+  .container { width: min(var(--container-width), calc(100% - 36px)); }
+  .header-inner { min-height: 68px; }
+  .menu-toggle { display: grid; width: 40px; height: 40px; align-content: center; justify-items: center; gap: 5px; border: 1px solid var(--color-border); border-radius: 9px; background: #fff; cursor: pointer; }
+  .menu-toggle-line { width: 16px; height: 1.5px; border-radius: 2px; background: #4f5870; transition: transform 160ms ease; }
+  .menu-toggle[aria-expanded="true"] .menu-toggle-line:first-of-type { transform: translateY(3.25px) rotate(45deg); }
+  .menu-toggle[aria-expanded="true"] .menu-toggle-line:last-of-type { transform: translateY(-3.25px) rotate(-45deg); }
+  .primary-nav { position: absolute; top: calc(100% + 1px); right: 0; left: 0; display: none; align-items: stretch; gap: 0; padding: 8px 18px 18px; border-bottom: 1px solid var(--color-border); background: rgba(248, 250, 252, 0.98); box-shadow: 0 14px 22px rgba(35, 44, 86, 0.06); }
+  .primary-nav.is-open { display: flex; flex-direction: column; }
+  .primary-nav > a:not(.button) { padding: 12px 2px; border-bottom: 1px solid #eceef4; }
+  .primary-nav .nav-login { margin: 0; }
+  .primary-nav .nav-cta { margin-top: 12px; }
+  .hero { padding-top: 55px; padding-bottom: 60px; }
+  .hero-grid { gap: 35px; grid-template-columns: 1fr; }
+  .hero-copy { max-width: 570px; padding-top: 0; }
+  .hero h1 { font-size: clamp(42px, 9vw, 59px); letter-spacing: -2.6px; }
+  .hero-description { max-width: 500px; }
+  .hero-proof { margin-top: 28px; }
+  .hero-visual { width: min(100%, 590px); margin-inline: auto; padding: 7px 4px 17px; }
+  .dashboard-preview { transform: none; }
+  .floating-note { right: -6px; bottom: 38px; }
+  .trust-inner { min-height: 88px; flex-direction: column; align-items: flex-start; justify-content: center; gap: 8px; }
+  .trust-items { flex-wrap: wrap; gap: 10px 15px; font-size: 10px; }
+  .steps-grid { gap: 12px; }
+  .step-card { min-height: 244px; padding: 19px 17px; }
+  .feature-layout { gap: 31px; grid-template-columns: 1fr; }
+  .feature-intro > p { max-width: 550px; }
+  .feature-grid { gap: 12px; }
+  .feature-card { min-height: 164px; padding: 18px; }
+  .benefits-layout { gap: 40px; grid-template-columns: 1fr; }
+  .benefits-visual { width: min(100%, 520px); margin-inline: auto; }
+  .benefits-copy { max-width: 570px; }
+  .story-grid { gap: 11px; }
+  .story-card { min-height: 240px; padding: 18px 15px; }
+  .story-card blockquote { font-size: 11px; }
+  .story-role { display: none; }
+  .faq-layout { gap: 32px; grid-template-columns: 1fr; }
+  .faq-intro h2 { max-width: 500px; }
+  .footer-main { gap: 30px; }
+  .footer-links { gap: 28px; }
+}
+
+@media (max-width: 520px) {
+  .container { width: calc(100% - 32px); }
+  .section-space { padding-block: 55px; }
+  .hero { padding-top: 42px; padding-bottom: 48px; }
+  .hero h1 { margin-top: 17px; font-size: clamp(39px, 11vw, 51px); letter-spacing: -2.3px; }
+  .hero-description { font-size: 14px; }
+  .hero-actions { align-items: stretch; }
+  .hero-actions .button { min-height: 44px; padding-inline: 14px; font-size: 11px; }
+  .hero-proof { margin-top: 25px; }
+  .preview-topbar { height: 45px; padding-inline: 12px; }
+  .preview-period { font-size: 7px; }
+  .preview-body { padding: 15px 12px 13px; }
+  .preview-greeting { gap: 7px; }
+  .preview-greeting h2 { font-size: 12px; }
+  .preview-role { padding: 6px; font-size: 7px; white-space: nowrap; }
+  .preview-metrics { gap: 7px; grid-template-columns: 1.05fr 0.95fr; }
+  .metric-card { padding: 10px 9px; }
+  .readiness-content { gap: 7px; }
+  .readiness-ring { width: 47px; height: 47px; }
+  .readiness-ring::before { width: 38px; height: 38px; }
+  .readiness-ring span { font-size: 14px; }
+  .readiness-copy strong { font-size: 8px; }
+  .readiness-copy span { font-size: 6px; }
+  .skill-legend { gap: 5px; font-size: 6px; }
+  .preview-roadmap { padding-inline: 9px; }
+  .roadmap-task strong { font-size: 7px; }
+  .roadmap-tag { padding: 3px 5px; font-size: 6px; }
+  .floating-note { right: -5px; bottom: 30px; padding: 8px; }
+  .floating-note strong { font-size: 8px; }
+  .floating-note small { font-size: 7px; }
+  .trust-items { gap: 8px 10px; font-size: 9px; }
+  .section-heading { margin-bottom: 30px; }
+  .section-heading h2, .feature-intro h2, .benefits-copy h2, .faq-intro h2 { font-size: 34px; letter-spacing: -1.5px; }
+  .steps-grid { grid-template-columns: 1fr; }
+  .step-card { min-height: 0; padding: 18px 19px; }
+  .step-top { margin-bottom: 18px; }
+  .step-link { margin-top: 12px; }
+  .feature-grid { gap: 9px; }
+  .feature-card { min-height: 168px; padding: 15px 13px; }
+  .feature-icon { margin-bottom: 13px; }
+  .feature-card h3 { font-size: 13px; }
+  .feature-card p { font-size: 11px; }
+  .benefits-layout { gap: 31px; }
+  .benefits-visual { padding-right: 8px; }
+  .path-card { padding: 19px 17px 15px; }
+  .benefit-bubble { right: -3px; bottom: 3px; }
+  .stories-heading { align-items: flex-start; flex-direction: column; gap: 10px; }
+  .story-grid { grid-template-columns: 1fr; }
+  .story-card { min-height: auto; padding: 18px; }
+  .story-card blockquote { min-height: 0; margin-bottom: 14px; font-size: 12px; }
+  .story-role { display: inline-block; }
+  .faq-item summary { min-height: 58px; font-size: 11px; }
+  .closing-section { padding: 6px 0 52px; }
+  .closing-card { min-height: 300px; border-radius: 18px; }
+  .closing-content h2 { font-size: 33px; }
+  .closing-content p { max-width: 270px; margin-inline: auto; font-size: 11px; }
+  .sparkle-one { left: 9%; }.sparkle-two { right: 9%; }
+  .footer-main { flex-direction: column; padding-bottom: 25px; }
+  .footer-links { justify-content: space-between; gap: 14px; }
+  .footer-bottom { flex-direction: column; gap: 5px; }
+}
